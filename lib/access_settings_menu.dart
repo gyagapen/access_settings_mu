@@ -6,8 +6,17 @@ class AccessSettingsMenu {
   static const MethodChannel _channel =
       const MethodChannel('access_settings_menu');
 
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
+  static Future<bool> openSettings() async {
+    bool result = false;
+
+    //{@required String settingsType}
+    String settingsType = 'ACTION_LOCATION_SOURCE_SETTINGS';
+    try {
+      result = await _channel.invokeMethod(settingsType);
+    } catch (e) {
+      result = false;
+    }
+
+    return result;
   }
 }
