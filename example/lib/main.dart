@@ -91,8 +91,8 @@ class _MyAppState extends State<MyApp> {
 
     try {
       resultSettingsOpening =
-          //await AccessSettingsMenu.openSettings(settingsType: settingsName);
-          await AccessSettingsMenu.openSettings();
+          await AccessSettingsMenu.openSettings(settingsType: settingsName);
+          //await AccessSettingsMenu.openSettings();
     } catch (e) {
       resultSettingsOpening = false;
     }

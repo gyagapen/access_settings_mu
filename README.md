@@ -1,6 +1,6 @@
 # access_settings_menu
 
-A new flutter plugin project.
+A flutter plugin to open Android settings menus programatically.
 
 ## Getting Started
 
