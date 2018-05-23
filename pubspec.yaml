@@ -1,8 +1,8 @@
 name: access_settings_menu
-description: A  flutter plugin to open Android settings menus programatically.
+description: A flutter plugin to open Android settings menus programatically.
 version: 0.0.1
-author:
-homepage:
+author: gyagapen
+homepage: https://github.com/gyagapen/access_settings_mu
 
 dependencies:
   flutter:

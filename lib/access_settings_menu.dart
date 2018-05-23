@@ -9,8 +9,6 @@ class AccessSettingsMenu {
   static Future<bool> openSettings({String settingsType}) async {
     bool result = false;
 
-    //{@required String settingsType}
-    //String settingsType = 'ACTION_LOCATION_SOURCE_SETTINGS';
     try {
       result = await _channel.invokeMethod(settingsType);
     } catch (e) {

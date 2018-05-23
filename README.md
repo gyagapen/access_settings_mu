@@ -31,7 +31,6 @@ openSettingsMenu(settingsName) async {
     try {
       resultSettingsOpening =
           await AccessSettingsMenu.openSettings(settingsType: settingsName);
-          //await AccessSettingsMenu.openSettings();
     } catch (e) {
       resultSettingsOpening = false;
     }
